@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" >
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+  <!-- Sign Up -->
+  <main>
+    <div class="container">
+      <div class="formulary">
+        <div class="text">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+        </div>
+        <form action="/" id="form">
+          <fieldset>
+            <div class="input-control ">
+              <div class="input-msg">
+                <label for="email"> Email address </label>
+                <div class="error-msg"> error message </div>
+              </div>
+              <input type="text" id="email" name="email" placeholder="email@company.com">
+              <button id="btn" type="submit" aria-label="submit">Subscribe to monthly newsletter</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="img"></div>
+    </div>
+  </main>
+  <!-- Sign Up end -->
+
+  <!-- Success message -->
+  <section>
+    <div class="sm-container">
+      <figure class="success-icon">
+        <img src="images/icon-success.svg" alt="success icon">
+      </figure>
+      <div class="sm-text">
+        <h2>Thanks for subscribing!</h2>
+        <p>A confirmation email has been sent to <span></span>. Please open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <button id="btn" onclick="dismissMsg()"> Dismiss message </button>
+    </div>
+  </section>
+  <!-- Success message end -->
+
+  <!-- Footer -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/CairoGarb" target="_blank">Cairo Garbelotto</a>.
+  </div>
+  <!-- Footer end -->
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
